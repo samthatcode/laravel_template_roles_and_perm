@@ -69,7 +69,6 @@ Route::middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified']
             Route::patch('/', 'update')->name('update');
         });
 
-        Route::get('/activity/login', [ActivityController::class, 'login'])->name('activity.login');
 
         Route::get('/user/{user}/menu', fn(User $user) => $user->menus())->name('user.menu');
         Route::get('/permission/get', [PermissionController::class, 'get'])->name('permission');
