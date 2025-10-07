@@ -36,7 +36,7 @@ const sorted = () =>
         <Card class="bg-white dark:bg-gray-700 dark:text-gray-200">
             <template #header>
                 <div
-                    class="flex items-center space-x-1 justify-between bg-gray-200 dark:bg-gray-800 p-2"
+                    class="flex items-center justify-between p-2 space-x-1 bg-gray-200 dark:bg-gray-800"
                 >
                     <p class="lowercase first-letter:capitalize">
                         {{ __("you can change translation on this page") }}
@@ -68,7 +68,7 @@ const sorted = () =>
                             :key="i"
                         >
                             <div
-                                class="flex flex-col space-y-1 px-2 rounded-md"
+                                class="flex flex-col px-2 space-y-1 rounded-md"
                             >
                                 <div class="flex items-center space-x-1">
                                     <label
